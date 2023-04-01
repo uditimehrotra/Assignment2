@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Timer
+        </title>
+    </head>
+    <body>
+    
+        
+            <button onclick="x=setInterval(start,1000)">START</button>
+            <button onclick="clearInterval(x)">stop</button>
+            <button onclick="reset()">reset</button>
+            <div id="counter"></div>
+
+            <script type="text/javascript"> 
+            count=0;
+            function start()
+            {
+                block=document.getElementById('counter');
+                block.innerHTML=count;
+                ++count;
+
+            }
+            function reset()
+            {
+                block=document.getElementById('counter');
+                count=0;
+                block.innerHTML=count;
+
+            }
+
+            </script>
+        <!-- </div> -->
+    </body>
+</html>

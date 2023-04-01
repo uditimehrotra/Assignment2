@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(rgba(245,246,252,0.52), rgba(117,19,93,0.73));
+    width: 80%;
+    height: 40px;
+    background-size: cover;
+    padding: 20px;
+}
+h1{
+    
+    font:30px bolder ;
+    color: peru;
+}
+p{
+    font:15px bold;
+    color: aquamarine;
+    line-height: 2;
+
+}
+strong{
+    font:20px arial,sans-serif;
+    color: blueviolet;
+}
+h2{
+    font: solid 20px ;
+    color: cadetblue;
+}

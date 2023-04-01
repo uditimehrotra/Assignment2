@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .card {
+            position: relative;
+            width: 30%;
+            border: 2px solid black;
+            box-shadow: 5px 10px pink;
+            height:500px;
+        }
+
+        .card>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .desc {
+            padding: 20px;
+            
+        }
+
+        h2 {
+            text-align: center;
+            color: rgba(71, 98, 255, 0.459);
+        }
+
+        p {
+            text-align: justify;
+            color: rgba(252, 0, 0, 0.459)
+        }
+
+        .date {
+            width: 30%;
+            color: plum;
+            font-size: 15px;
+            background-color: rgba(255, 230, 0, 0.459);
+            position: absolute;
+            top: 96%;
+            left: 63%;
+            transform: rotate(-5deg);
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display:flex;justify-content: center">
+        <script>
+
+            images = ["5.jpeg", "18.jpeg", "12.jpeg"];
+            date = ["04-07-2002", "14-06-2012", "12-04-2001"];
+            desc = ["d1", "d2", "d3"];
+            titles = ["Title 1", " Title 2", "title3"];
+            for (i = 0; i < 3; i++) {
+                var card = '<div class="card">'
+                    + '<img src="images/' + images[i] + '"/>'
+                    + '<div class=date>' + date[i] + '</div>'
+                    + '<div class="desc">'
+                    + '<h2 align="center">' +titles[i] + '</h2>'
+                    + '<p>' + desc[i] + '</p>'
+                    + '</div></div>'
+                document.write(card);
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

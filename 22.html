@@ -1,0 +1,56 @@
+<!-- Implement a Javascript function that accept number of rows(m) and columns(n)
+from user and displays a 2D m x n square layout of alternate colors black and red. -->
+<html>
+    <head>
+        <title>
+            Chess Box
+        </title>
+        <style>
+            .inner1
+            {
+                height:50px;
+                width:50px;
+                background-color:white;
+                border-color: black;
+                border-width: 2px;
+                border-style: double;
+            }
+            .inner1:hover
+            {
+                background-color:red;
+                
+            }
+            .inner2
+            {
+                height:50px;
+                width:50px;
+                background-color:black;
+                border-color: white;
+                border-width: 2px;
+                border-style: double;
+            }
+            .container
+            {
+                display:flex;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            a=prompt("Enter number of rows")
+            b=prompt("Enter number of columns")
+            for(i=0; i<a; i++)
+            {
+                document.write("<div class='container'>")
+                for(j=0; j<b; j++)
+                {
+                    if((i+j)%2==0)
+                        document.write("<div class='inner1'></div>")
+                    else
+                        document.write("<div class='inner2'></div>")
+                }
+                document.write("</div>")
+            }
+        </script>
+    </body>
+</html>

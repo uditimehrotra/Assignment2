@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>banasthali.in</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+           
+		}
+
+        .navbar2 {
+			display: flex;
+			align-items:flex-start;
+			justify-content:left;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+           
+		}
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+            
+		}
+        .background2 {
+			background: rgb(20, 189, 59);
+			background-blend-mode: darken;
+			background-size: cover;
+            
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            width:277px;
+            height:146px;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 70px;
+		}
+        .firstHalf img {
+			width: 435px;
+            height: 300px;
+			
+            display: flex;
+            position: relative;
+            left: -522px;
+            bottom: -68px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.nav-list li {
+			list-style: none;
+            
+			padding: 26px 16px;
+            margin-left: 16px;
+		}
+        
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 20%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+            width: 109px;
+            margin-left: 128px;
+		}
+
+		.firstsection {
+			background-color: green;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: right;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+            position: relative;
+            top: -160px;
+		}
+
+		.text-small {
+			font-size: 18px;
+            margin-top: 57px;
+            margin-left: 3px;
+            position: relative;
+            bottom: 198px;
+		}
+        .text-small1 {
+			font-size: 17px;
+            color:white;
+            height:105px;
+            width:400px;
+            margin-top: 173px;
+
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		
+	
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "logo.jpeg">
+                <p class="text-small1">Banasthali Vidyapith</p>
+			</div>
+			<li><a href="#web">news &events</a></li>
+			<li><a href="#program">international</a></li>
+			<li><a href="#course">careers</a></li>
+            <li><a href="#course">placements</a></li>
+            <li><a href="#course">alumni</a></li>
+            <li><a href="#course">contact us</a></li>
+            <li><a href="#course">login hub</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+        <nav class="navbar2 background2">
+            <ul class="nav-list">
+                <li><a href="#web">about us</a></li>
+                <li><a href="#program">academics</a></li>
+                <li><a href="#course">research</a></li>
+                <li><a href="#course">campus & facilities</a></li>
+                <li><a href="#course">school education</a></li>
+                <li><a href="#course">admission</a></li>
+            </ul>
+    
+        </nav>
+		<div class="box-main">
+			<div class="firstHalf">
+                <img src="ban.jpeg">
+				<h1 class="text-big" id="web">weaving the tapestry of life</h1>
+				<p class="text-small">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, itaque?
+
+                </p>
+
+			</div>
+            
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
+</body>
+
+</html>

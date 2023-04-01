@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--16. Create a webpage that displays your favourite quotations in a web page just above images. 
+You have to use border, height, width, margin, padding, outline properties of CSS. Also use 
+text and font properties to add effects in text to display quotations.
+-->
+<html>
+    <head>
+        <title>Quotes</title>
+        <style>
+            
+            body{
+                background-color: wheat;
+            }
+            h1{
+                position:absolute;
+                color:rgb(8, 18, 15);
+                z-index:2;
+                font-size:50px;
+                text-shadow:5px 5px 5px rgb(224, 156, 166);
+                text-decoration: dotted;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .A{
+                top:250px;
+                left:180px;
+                right: 150px;
+            }
+            .B{
+                top:750px;
+                left:180px;
+                right: 150px;
+            }
+            .C{
+                top:1200px;
+                left:180px;
+                right: 150px;
+            }
+            img{
+                height:400px;
+                width:1300px;
+                border-width: 4px;
+                border-color: black;
+                border-radius:10%;
+                border-style: groove;
+                box-shadow: 20px 20px 10px rgb(52, 16, 16);
+                outline:solid rgb(106, 106, 12) 5px;
+                margin-top:50px;
+                margin-left:50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="images/7.jpeg">
+        <h1 class="C">"A little progress each day adds up to big results"</h1>
+        <img src="images/9.jpeg">
+        <h1 class="A">"Education is the most powerful weapon which you can use to change the world "</h1>
+        <img src="images/25.jpeg">
+        <h1 class="B">"Live Every moment of life with joy ."</h1>
+    </body>
+</html>

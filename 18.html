@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--18. Create an infinite animation of an element moving in a square pattern.-->
+<html>
+    <head>
+        <title>
+            Animation
+        </title>
+        <style>
+            .cont{
+                background-color: antiquewhite;
+                height:800px;
+                width:1400px;
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .cont > div {
+                background-color: aqua;
+                height:300px;
+                width:300px;
+                margin:20px 20px 20px 20px;
+                font-size: 50px;
+                text-align: center;
+                animation-name:anime;
+                animation-iteration-count: infinite;
+                animation-duration:3s;
+            }
+            @keyframes anime{
+                from{
+                    transform:rotate(0deg);
+                    background-color: brown;
+                }
+                to{
+                    transform: rotate(360deg);
+                    background-color: cadetblue;
+                    translate:100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div>Internet</div>
+            <div>And</div>
+            <div>Web</div>
+            <div>Technology</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Guess the number</title>
+        <style>
+            .container{
+                background-color: #cf9494;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+                position: relative;
+            }
+            #inner{
+                color:rgb(0, 0, 0);
+                font-size: 100px;
+                
+            }
+            input{
+                font-size: large;
+                background-color: rgb(231, 225, 218);
+                color: rgb(0, 0, 0);
+                font-weight: bolder;
+                
+            }
+            p{
+                font-size: 40px;
+                color: rgb(54, 39, 54);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">             
+                    <label><u>Guess The Number</u></label><br>
+                    <p >Enter a number</p>
+                    <div id="sub">
+                        <input id="enterNo">
+                        <button id="enter" onclick="checkNo()">Guess</button>
+                        <!--<button id="retr" onclick="Retry()">Retry</button>-->
+                </div>
+                <p id="op">  </p>
+                
+        </div>
+        <script>
+          
+            
+            
+            
+            var otext=document.getElementById("op");
+            var randomNo=Math.ceil(Math.random()*10);
+            
+            function checkNo(){
+                var inp=document.getElementById("enterNo").value;
+                
+                if(inp==randomNo){
+                    
+                    otext.innerHTML=" Congratulations!! You are correct. The number was " +randomNo;
+                    otext.style.color="red";
+                    
+                }
+                else if(inp>randomNo){
+                    
+                    otext.innerHTML="Too high try again";
+                    
+                    
+                }
+                else{
+                    
+                    otext.innerHTML="Too low try again";
+                    
+                    
+                }
+            }
+            
+            
+        </script>
+    </body>
+</html>
