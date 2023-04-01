@@ -9,7 +9,7 @@
 	position:relative;
 }
 .container > nav{
-	background-image:url("images/bgs/pool_table.png");
+	background-image:url("pool_table.png");
     width:100%;
     height:5%;
 }
@@ -37,7 +37,7 @@
 	margin:15px;
 }
 .container > .c1{
-    background-image:url("images/bgs/wood_pattern_trans.png");
+    background-image:url("wood_pattern_trans.png");
     width:100%;
     height:55%;
     display:flex;
@@ -45,7 +45,7 @@
     align-items:center;
 }
 .container > .c2{
-	background-image:url("images/bgs/plaid.png");
+	background-image:url("plaid.png");
     width:100%;
     height:55%;
     display:flex;
@@ -53,7 +53,7 @@
     align-items:center;
 }
 .container > .c3{
-    background-image:url("images/bgs/green_dust_scratch.png");
+    background-image:url("green_dust_scratch.png");
     width:100%;
     height:55%;
     display:flex;
@@ -61,7 +61,7 @@
     align-items:center;
 }
 .container > .c4{
-    background-image:url("images/bgs/pineapplecut.png");
+    background-image:url("pineapplecut.png");
     width:100%;
     height:55%;
     display:flex;
@@ -69,7 +69,7 @@
     align-items:center;
 }
 .container > .c5{
-    background-image:url("images/bgs/wood_pattern.png");
+    background-image:url("wood_pattern.png");
     width:100%;
     height:55%;
     display:flex;
@@ -77,7 +77,7 @@
     align-items:center;
 }
 .container > .c6{
-    background-image:url("images/bgs/washi.png");
+    background-image:url("washi.png");
     width:100%;
     height:55%;
     display:flex;
@@ -85,7 +85,7 @@
     align-items:center;
 }
 .container > .c7{
-    background-image:url("images/bgs/pool_table.png");
+    background-image:url("pool_table.png");
     width:100%;
     height:5%;
     display:flex;
@@ -95,7 +95,7 @@
 	font-size:20px;
 }
 .container > .c8{
-    background-image:url("images/bgs/cubes.png");
+    background-image:url("cubes.png");
     width:100%;
     height:100%;
     display:flex;
